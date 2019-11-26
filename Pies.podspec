@@ -92,7 +92,8 @@ Pod::Spec.new do |s|
   s.source_files  = "Pies.framework/Headers/*.h"
   s.exclude_files = "Classes/Exclude"
 
-  # s.public_header_files = "Classes/**/*.h"
+  s.public_header_files = "Pies.framework/Headers/*.h"
+  s.vendored_frameworks = "Pies.framework"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
