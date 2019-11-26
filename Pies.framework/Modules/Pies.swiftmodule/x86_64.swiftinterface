@@ -1,0 +1,80 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.1.3 (swiftlang-1100.0.282 clang-1100.0.33.15)
+// swift-module-flags: -target x86_64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Pies
+import Foundation
+@_exported import Pies
+import Security
+import Swift
+import UIKit
+public class Pies {
+  @objc deinit
+}
+extension Pies {
+  public static func configure(appId: Swift.String, apiKey: Swift.String, enableLogging: Swift.Bool = false)
+}
+extension Pies {
+  public static func logInAppPurchase(name: Swift.String, amount: Swift.Double)
+}
+open class KeychainSwift {
+  open var lastResultCode: Darwin.OSStatus
+  open var accessGroup: Swift.String?
+  open var synchronizable: Swift.Bool
+  public init()
+  public init(keyPrefix: Swift.String)
+  @discardableResult
+  open func set(_ value: Swift.String, forKey key: Swift.String, withAccess access: Pies.KeychainSwiftAccessOptions? = nil) -> Swift.Bool
+  @discardableResult
+  open func set(_ value: Foundation.Data, forKey key: Swift.String, withAccess access: Pies.KeychainSwiftAccessOptions? = nil) -> Swift.Bool
+  @discardableResult
+  open func set(_ value: Swift.Bool, forKey key: Swift.String, withAccess access: Pies.KeychainSwiftAccessOptions? = nil) -> Swift.Bool
+  open func get(_ key: Swift.String) -> Swift.String?
+  open func getData(_ key: Swift.String) -> Foundation.Data?
+  open func getBool(_ key: Swift.String) -> Swift.Bool?
+  @discardableResult
+  open func delete(_ key: Swift.String) -> Swift.Bool
+  @discardableResult
+  open func clear() -> Swift.Bool
+  @objc deinit
+}
+public struct KeychainSwiftConstants {
+  public static var accessGroup: Swift.String {
+    get
+  }
+  public static var accessible: Swift.String {
+    get
+  }
+  public static var attrAccount: Swift.String {
+    get
+  }
+  public static var attrSynchronizable: Swift.String {
+    get
+  }
+  public static var klass: Swift.String {
+    get
+  }
+  public static var matchLimit: Swift.String {
+    get
+  }
+  public static var returnData: Swift.String {
+    get
+  }
+  public static var valueData: Swift.String {
+    get
+  }
+}
+public enum KeychainSwiftAccessOptions {
+  case accessibleWhenUnlocked
+  case accessibleWhenUnlockedThisDeviceOnly
+  case accessibleAfterFirstUnlock
+  case accessibleAfterFirstUnlockThisDeviceOnly
+  case accessibleAlways
+  case accessibleWhenPasscodeSetThisDeviceOnly
+  case accessibleAlwaysThisDeviceOnly
+  public static func == (a: Pies.KeychainSwiftAccessOptions, b: Pies.KeychainSwiftAccessOptions) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+extension Pies.KeychainSwiftAccessOptions : Swift.Equatable {}
+extension Pies.KeychainSwiftAccessOptions : Swift.Hashable {}
