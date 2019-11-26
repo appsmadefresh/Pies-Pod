@@ -1,0 +1,11 @@
+version: "Apple Swift version 5.1 (swiftlang-1100.0.270.13 clang-1100.0.33.7)"
+options: "b2f1d9d9175763eff42e1b2a809b5fd6"
+build_time: [1572640530, 12839000]
+inputs:
+  "/Users/nathanlarson/Documents/Fresh/Pies/PiesFramework/Pies/Pies/APIOperation.swift": [9223372036, 854775807]
+  "/Users/nathanlarson/Documents/Fresh/Pies/PiesFramework/Pies/Pies/Pies.swift": [9223372036, 854775807]
+  "/Users/nathanlarson/Documents/Fresh/Pies/PiesFramework/Pies/Pies/PiesHelper.swift": [9223372036, 854775807]
+  "/Users/nathanlarson/Documents/Fresh/Pies/PiesFramework/Pies/Pies/PLog.swift": [9223372036, 854775807]
+  "/Users/nathanlarson/Documents/Fresh/Pies/PiesFramework/Pies/Pies/APIQueues.swift": [9223372036, 854775807]
+  "/Users/nathanlarson/Documents/Fresh/Pies/PiesFramework/Pies/Pies/Keychain.swift": [9223372036, 854775807]
+  "/Users/nathanlarson/Documents/Fresh/Pies/PiesFramework/Pies/Pies/APIBuilder.swift": [9223372036, 854775807]

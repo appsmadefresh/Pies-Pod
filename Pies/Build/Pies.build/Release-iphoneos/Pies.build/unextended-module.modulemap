@@ -1,0 +1,10 @@
+framework module Pies {
+  umbrella header "Pies.h"
+
+  export *
+  module * { export * }
+}
+
+module Pies.__Swift {
+    exclude header "Pies-Swift.h"
+}

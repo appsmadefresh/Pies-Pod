@@ -1,0 +1,6 @@
+framework module Pies {
+  umbrella header "Pies.h"
+
+  export *
+  module * { export * }
+}

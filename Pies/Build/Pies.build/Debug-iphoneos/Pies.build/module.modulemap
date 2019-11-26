@@ -1,0 +1,11 @@
+framework module Pies {
+  umbrella header "Pies.h"
+
+  export *
+  module * { export * }
+}
+
+module Pies.Swift {
+    header "Pies-Swift.h"
+    requires objc
+}
